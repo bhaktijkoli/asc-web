@@ -320,6 +320,9 @@ a:hover {
 .overlay-a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
 }
+.overlay-b {
+  background: #00000096;
+}
 
 .overlay {
   position: absolute;

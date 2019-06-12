@@ -87,6 +87,37 @@
 				</div>
 			</div>
 		</section>
+		<section id="our_strengths">
+			<div class="overlay overlay-b"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center">
+							<div class="title-box">
+								<h2 class="title-a">Our Strengths</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					@php
+					$strengths = [
+						array('name'=>'Years Of Experience', 'number'=>'45'),
+						array('name'=>'Satisfying Clients', 'number'=>'260'),
+						array('name'=>'Number of Projects', 'number'=>'520'),
+					];
+					@endphp
+					@foreach ($strengths as $strength)
+						<div class="col-sm-4">
+							<div class="counter">
+								<span class="counter-number">{{$strength['number']}}</span>
+								<h4 class="counter-text">{{$strength['name']}}</h4>
+							</div>
+						</div>
+					@endforeach
+				</div>
+			</div>
+		</section>
 	</main>
 @endsection
 @section('post')

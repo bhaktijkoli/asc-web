@@ -20825,6 +20825,10 @@ a:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
 }
 
+.overlay-b {
+  background: #00000096;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -22523,5 +22527,31 @@ footer .credits {
 
 #our_services .service .service-text {
   margin: 20px 0px;
+}
+
+#our_strengths {
+  background: url("/img/our_strengths.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#our_strengths .container {
+  padding: 100px 0px;
+}
+
+#our_strengths h2,
+#our_strengths h4,
+#our_strengths span {
+  color: #FFF;
+}
+
+#our_strengths .counter {
+  margin: 50px 0px 20px 0px;
+  text-align: center;
+}
+
+#our_strengths .counter-number {
+  font-size: 4rem;
 }
 
