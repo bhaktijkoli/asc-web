@@ -4,3 +4,9 @@ try {
 
     require('bootstrap');
 } catch (e) {}
+
+
+require('./scripts/easing');
+window.owlCarousel = require('./scripts/owl.carousel');
+window.ScrollReveal = require('./scripts/scrollreveal');
+require('./scripts/main');
