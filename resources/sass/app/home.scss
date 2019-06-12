@@ -7,4 +7,25 @@
   .container {
     padding: 100px 0px;
   }
+  .service {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .service .icon {
+    background: #2eca6a;
+    width: 124px;
+    height: 124px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 50%;
+    position: relative;
+  }
+  .service .icon img {
+    margin-top: 20px;
+    filter: invert(1);
+    width: 74px;
+  }
+  .service .service-text {
+    margin: 20px 0px;
+  }
 }

@@ -73,6 +73,18 @@
 					]
 					@endphp
 				</div>
+				<div class="row">
+					@foreach ($services as $service)
+						<div class="col-sm-3">
+							<div class="service">
+								<div class="icon">
+									<img src="/img/services/{{$service['image']}}" alt="">
+								</div>
+								<h4 class="service-text">{{$service['name']}}</h4>
+							</div>
+						</div>
+					@endforeach
+				</div>
 			</div>
 		</section>
 	</main>
