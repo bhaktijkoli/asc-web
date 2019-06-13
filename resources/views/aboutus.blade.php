@@ -2,7 +2,7 @@
 @section('pre')
 	@php
 	$title = "About Us | Associate Consultants";
-	$menu_item = 'aboutus';
+	$menu_item = 'about';
 @endphp
 @endsection
 @section('content')

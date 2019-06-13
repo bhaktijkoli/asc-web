@@ -16,13 +16,25 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="{{route('home')}}">Home</a>
+            <a class="nav-link {{$menu_item=='home'?'active':''}}" href="{{route('home')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('about')}}">About</a>
+            <a class="nav-link {{$menu_item=='about'?'active':''}}" href="{{route('about')}}">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">PMC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Careers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Contact</a>
