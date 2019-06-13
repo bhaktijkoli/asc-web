@@ -18303,7 +18303,7 @@ a.text-dark:focus {
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -30%, 0);
   }
 
   to {
@@ -18315,7 +18315,7 @@ a.text-dark:focus {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -30%, 0);
   }
 
   to {
@@ -18373,7 +18373,7 @@ a.text-dark:focus {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
   }
 
   to {
@@ -18419,7 +18419,7 @@ a.text-dark:focus {
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(30%, 0, 0);
   }
 
   to {
@@ -18431,7 +18431,7 @@ a.text-dark:focus {
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(30%, 0, 0);
   }
 
   to {
@@ -18477,7 +18477,7 @@ a.text-dark:focus {
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 30%, 0);
   }
 
   to {
@@ -18489,7 +18489,7 @@ a.text-dark:focus {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 30%, 0);
   }
 
   to {

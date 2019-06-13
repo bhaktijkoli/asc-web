@@ -3,6 +3,7 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    window.WOW = require('wow.js');
 } catch (e) {}
 
 

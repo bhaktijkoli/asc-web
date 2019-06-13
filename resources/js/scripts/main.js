@@ -147,4 +147,7 @@
 		}
 	});
 
+  new WOW().init();
+  console.log("Everything loaded");
+
 })(jQuery);
