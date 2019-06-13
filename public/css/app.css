@@ -22551,8 +22551,16 @@ footer .credits {
   text-align: center;
 }
 
+#our_strengths .counter-image {
+  width: 64px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 #our_strengths .counter-number {
   font-size: 4rem;
+  color: #FFF;
+  margin: 0px;
 }
 
 #aboutus-full .container {

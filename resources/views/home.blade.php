@@ -102,15 +102,16 @@
 				<div class="row">
 					@php
 					$strengths = [
-						array('name'=>'Years Of Experience', 'number'=>'45'),
-						array('name'=>'Satisfying Clients', 'number'=>'260'),
-						array('name'=>'Number of Projects', 'number'=>'520'),
+						array('name'=>'Years Of Experience', 'number'=>'45', 'image'=>'exp.svg'),
+						array('name'=>'Satisfying Clients', 'number'=>'260', 'image'=>'clients.svg'),
+						array('name'=>'Number of Projects', 'number'=>'520', 'image'=>'projects.svg'),
 					];
 					@endphp
 					@foreach ($strengths as $strength)
 						<div class="col-sm-4">
 							<div class="counter">
-								<span class="counter-number">{{$strength['number']}}</span>
+								<img src="/img/{{$strength['image']}}" alt="" class="counter-image">
+								<p class="counter-number">{{$strength['number']}}</p>
 								<h4 class="counter-text">{{$strength['name']}}</h4>
 							</div>
 						</div>

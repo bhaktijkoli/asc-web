@@ -45,8 +45,14 @@
     margin: 50px 0px 20px 0px;
     text-align: center;
   }
+  .counter-image {
+    width: 64px;
+    filter: invert(1);
+  }
   .counter-number {
     font-size: 4rem;
+    color: #FFF;
+    margin: 0px;
   }
   .counter-text {
   }
