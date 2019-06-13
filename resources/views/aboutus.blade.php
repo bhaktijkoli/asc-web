@@ -97,6 +97,89 @@
 						<img src="/img/about4.jpg" alt="Our Vision" class="wow fadeInRight">
 					</div>
 				</div>
+				<div class="row section-t4">
+					<div class="col-sm-12">
+						<div class="title-box-d">
+							<h1 class="title-d">Our Management</h1>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="/img/vikas_gokhale.jpg" alt="Vikas Gokhale" class="wow fadeInLeft">
+					</div>
+					<div class="col-sm-6">
+						<div class="section-t3">
+							<h3>Mr. Vikas V. Gokhale</h3>
+							<h3><small>Principal Consultant</small></h3>
+							<ul>
+								<li>Graduated from VJTI in 1979, stood 1st in the Bombay University in “Structural Analysis & Design”.</li>
+								<li>He is involved actively in many seminars giving lectures on Seismic Design of Structures, Project Management Consultancy, etc.</li>
+								<li>He is also involved in restoration of dilapidated buildings.</li>
+								<li>Apart from the academic career, he is attached with many social, spiritual & religious organizations.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row section-t4">
+					@php
+					$peoples = [
+						array(
+							'name' => 'Mr. Rohit Varma',
+							'post' => 'Associate',
+							'desc' => 'Graduated from Mumbai University with design of Prestressed Structures. Currently working as Associate.
+							Has vast experience in designing multistoried buildings, commercial buildings including hospitals, theatres, colleges, industrial structures etc. Very well conversant with computer aided design using ETABS & STAAD.',
+							'image' => 'rohit_varma.jpg',
+						),
+						array(
+							'name' => 'Mr. Umesh Joshi',
+							'post' => 'Associate',
+							'desc' => 'Graduated from Mumbai University and Post Graduated from Pune university. Has been involved in Design
+							and co-ordination of residential, commercial projects, High Rise Structures, etc.',
+							'image' => 'umesh_joshi.jpg',
+						),
+						array(
+							'name' => 'Mr. Mayur Patil',
+							'post' => 'Associate',
+							'desc' => 'Senior Engineer, Graduated from Pune University and Post Graduate from NIT Surat with honors .
+							Has vast experience in analysis and design of High-Rises upto 70 storied luxury skyscrapers.',
+							'image' => 'mayur_patil.jpg',
+						)
+					];
+					$inc = 1;
+					@endphp
+					@foreach ($peoples as $people)
+						@php
+							$inc++;
+						@endphp
+						<div class="col-sm-4 wow fadeInUp" data-wow-delay="{{$inc*300}}">
+							<div class="card-box-d">
+								<div class="card-img-d">
+									<img src="img/{{$people['image']}}" alt="{{$people['name']}}" class="img-d img-fluid">
+								</div>
+								<div class="card-overlay card-overlay-hover">
+									<div class="card-header-d">
+										<div class="card-title-d align-self-center">
+											<h3 class="title-d" style="color: #FFF;">
+												{{$people['name']}}
+												<br><small>{{$people['post']}}</small>
+											</h3>
+										</div>
+									</div>
+									<div class="card-body-d">
+										<p class="content-d" style="color: #FFF;">
+											{{$people['desc']}}
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="text-center" style="padding-top:10px;">
+								<h3>
+									{{$people['name']}}
+									<br><small>{{$people['post']}}</small>
+								</h3>
+							</div>
+						</div>
+					@endforeach
+				</div>
 			</div>
 		</section>
 	</main>
