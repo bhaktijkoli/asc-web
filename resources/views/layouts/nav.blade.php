@@ -25,7 +25,7 @@
             <a class="nav-link {{$menu_item=='services'?'active':''}}" href="{{route('services')}}">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Projects</a>
+            <a class="nav-link {{$menu_item=='projects'?'active':''}}" href="{{route('projects')}}">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">PMC</a>
