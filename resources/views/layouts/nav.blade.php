@@ -22,7 +22,7 @@
             <a class="nav-link {{$menu_item=='about'?'active':''}}" href="{{route('about')}}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Services</a>
+            <a class="nav-link {{$menu_item=='services'?'active':''}}" href="{{route('services')}}">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Projects</a>
