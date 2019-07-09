@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@getHome')->name('home');
+Route::get('/', 'HomeController@home')->name('home');
 Route::get('/aboutus', 'HomeController@aboutus')->name('about');
 Route::get('/services', 'HomeController@services')->name('services');
 
