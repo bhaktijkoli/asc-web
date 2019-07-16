@@ -10,4 +10,5 @@ try {
 require('./scripts/easing');
 window.owlCarousel = require('./scripts/owl.carousel');
 window.ScrollReveal = require('./scripts/scrollreveal');
+window.isotope = require('./scripts/isotope.pkgd');
 require('./scripts/main');

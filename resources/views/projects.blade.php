@@ -32,23 +32,41 @@
 		</section>
 		<section id="project_all">
 			<div class="container">
-				<div class="row">
+				<div class="row grid">
+					<div class="col-sm-12">
+						<div class="button-group filter-button-group">
+							<button data-filter="*">show all</button>
+							<button data-filter=".metal">metal</button>
+							<button data-filter=".transition">transition</button>
+						</div>
+					</div>
 					@foreach (App\Project::all() as $project)
 						<div class="col-sm-4">
-							<div class="project-card">
+							<div class="project-card metal">
 								<div class="img-box">
 									<img src="{{Voyager::image($project->image)}}" alt="{{$project->name}}">
 								</div>
 								<div class="overlay">
 									<h2 class="project-title">{{$project->name}}<h2>
+									</div>
 								</div>
 							</div>
-						</div>
-					@endforeach
+						@endforeach
+					</div>
 				</div>
-			</div>
-		</section>
-	</main>
-@endsection
-@section('post')
-@endsection
+			</section>
+		</main>
+	@endsection
+	@section('post')
+		<script>
+		$grid = $('.grid').isotope({
+			// options...
+			itemSelector: '.project-card',
+			layoutMode: 'vertical',
+		});
+		$('.filter-button-group').on( 'click', 'button', function() {
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+		});
+		</script>
+	@endsection
