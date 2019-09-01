@@ -10,6 +10,7 @@ try {
 require('./scripts/easing');
 window.owlCarousel = require('./scripts/owl.carousel');
 window.ScrollReveal = require('./scripts/scrollreveal');
-window.isotope = require('./scripts/isotope.pkgd');
+window.mixitup = require('mixitup');
+// window.isotope = require('./scripts/cells-by-row');
 require('./scripts/main');
 require('./scripts/contactform');

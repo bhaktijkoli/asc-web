@@ -31,18 +31,21 @@
 			</div>
 		</section>
 		<section id="project_all">
-			<div class="container">
-				<div class="row grid">
+			<div id="project-grid" class="container">
+				<div class="row">
 					<div class="col-sm-12">
 						<div class="button-group filter-button-group">
-							<button data-filter="*">show all</button>
-							<button data-filter=".metal">metal</button>
-							<button data-filter=".transition">transition</button>
+							<button data-filter="*" class="mixitup-control-active">All</button>
+							@foreach (App\ProjectCategory::all() as $category)
+								<button data-filter=".{{$category->slug}}">{{$category->name}}</button>
+							@endforeach
 						</div>
 					</div>
+				</div>
+				<div class="row project-grid" style="margin-top:70px;margin-bottom:100px;">
 					@foreach (App\Project::all() as $project)
 						<div class="col-sm-4">
-							<div class="project-card metal">
+							<div class="project-card {{$project->category->slug}}">
 								<div class="img-box">
 									<img src="{{Voyager::image($project->image)}}" alt="{{$project->name}}">
 								</div>
@@ -59,14 +62,13 @@
 	@endsection
 	@section('post')
 		<script>
-		$grid = $('.grid').isotope({
-			// options...
-			itemSelector: '.project-card',
-			layoutMode: 'vertical',
-		});
-		$('.filter-button-group').on( 'click', 'button', function() {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
+		var mixer = mixitup('.project-grid', {
+			selectors: {
+				target: '.project-card'
+			},
+			animation: {
+				duration: 300
+			}
 		});
 		</script>
 	@endsection

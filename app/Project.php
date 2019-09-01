@@ -8,6 +8,6 @@ class Project extends Model
 {
   public function category()
   {
-    $this->belongsTo('App\ProjectCategory');
+    return $this->belongsTo('App\ProjectCategory');
   }
 }
