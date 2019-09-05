@@ -28,6 +28,9 @@
             <a class="nav-link {{$menu_item=='projects'?'active':''}}" href="{{route('projects')}}">Projects</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link {{$menu_item=='clients'?'active':''}}" href="{{route('clients')}}">Clients</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link {{$menu_item=='careets'?'active':''}}" href="{{route('careers')}}">Careers</a>
           </li>
           <li class="nav-item">
