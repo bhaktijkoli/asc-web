@@ -47,7 +47,7 @@
 						<div class="col-sm-4">
 							<div class="project-card {{$project->category->slug}}">
 								<div class="img-box">
-									<img src="{{Voyager::image($project->image)}}" alt="{{$project->name}}">
+									<img src="{{Voyager::image($project->thumbnail('medium', 'image'))}}" alt="{{$project->name}}">
 								</div>
 								<div class="overlay">
 									<h2 class="project-title">{{$project->name}}<h2>
