@@ -99,7 +99,7 @@
 										</div>
 										<div class="icon-box-content">
 											<p class="mb-1">
-												207, Lodha Supremus-II, Wagale Estate,<br>Thane (w)- 400 604
+                                                607, Opal Square, Opp. Railadevi Lake, Road No.16, Wagale Estate, Thane west. 400604.
 											</p>
 										</div>
 									</div>
