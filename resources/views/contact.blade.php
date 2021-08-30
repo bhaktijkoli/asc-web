@@ -99,7 +99,7 @@
 										</div>
 										<div class="icon-box-content">
 											<p class="mb-1">
-                                                607, Opal Square, Opp. Railadevi Lake, Road No.16, Wagale Estate, Thane west. 400604.
+                                                101 Vrundavan Prasad, Opposite Devi temple, Above Anant Halwai, Tilak chowk. 421301.
 											</p>
 										</div>
 									</div>
