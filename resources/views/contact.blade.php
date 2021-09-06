@@ -98,7 +98,10 @@
 											<h4 class="icon-title">Find us in</h4>
 										</div>
 										<div class="icon-box-content">
-											<p class="mb-1">
+											<p class="mb-2">
+                                                607, Opal Square, near Old Passport Office, Wagle Estate, Thane West, Maharashtra 400604
+											</p>
+                                            <p class="mb-1">
                                                 101 Vrundavan Prasad, Opposite Devi temple, Above Anant Halwai, Tilak chowk. 421301.
 											</p>
 										</div>
